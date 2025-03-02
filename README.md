@@ -77,9 +77,11 @@ fn main() {
 
 Afterwards try to build the project using the ```cargo build``` command and then ```cargo run```.
 After a successful launch you should receive a message like this:
-```
+
 Standart output:
+```
 tested 10
 1337
 ```
+
 At this stage, the setup is considered complete.
