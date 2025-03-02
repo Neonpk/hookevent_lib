@@ -22,7 +22,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-hookevent_lib = { git = "ssh://git@github.com:Neonpk/hookevent_lib.git" }
+hookevent_lib = { git = "https://github.com/Neonpk/hookevent_lib.git" }
 ```
 Edit the ```main.rs``` file and paste the following content to test:
 
