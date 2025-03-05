@@ -36,14 +36,15 @@ impl<T, TOut> Hook<T, TOut> {
     }
     
     pub fn add(&'static self, name: String, callback: impl FnMut(&T) -> Option<TOut> + Send + 'static) -> usize {
+        
         let handlers = self.get_handlers();
 
         match handlers.lock(){
             Ok(mut mp) => {
 
                 if !mp.contains_key(&name){
-                    #[allow(unused_mut)]
-                    let mut new_vec: Vec<TCallback<T, TOut>> = Vec::new();
+                    
+                    let new_vec: Vec<TCallback<T, TOut>> = Vec::new();
                     mp.insert(name.clone(), new_vec);
                 }
 
@@ -62,7 +63,7 @@ impl<T, TOut> Hook<T, TOut> {
     }
 
     pub fn call(&'static self, name: String, data: &T) -> Option<TOut> {
-        #[allow(unused_mut)]
+        
         let mut result: Option<TOut> = None;
 
         let handlers = self.get_handlers();
