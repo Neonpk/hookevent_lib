@@ -3,7 +3,7 @@ Hook event System from GLua on Rust
 
 ## Installation & usage
 
-Install the Rust language using the official language or another method.
+Install the Rust language using the official page or another method.
 [https://www.rust-lang.org/learn/get-started]
 
 Next, create a test project using the ```cargo``` utility
