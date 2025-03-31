@@ -1,11 +1,3 @@
-/*
-	Author: Neonpk (Chichard)
-    Links: 
-        Github: https://github.com/neonpk
-        Steam:  https://steamcommunity.com/id/neonpk
-    Event system from GLua on Rust
-*/
-
 use once_cell::sync::Lazy;
 
 use std::{collections::HashMap, convert::TryInto, sync::Mutex};
